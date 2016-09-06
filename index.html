@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8 "> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="script_game.js"></script>
+   <script src="script_menu.js"></script>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+<style>
+</style>
+</head>
+<body>
+	
+    <div class="settings">
+    <fieldset>
+        <legend>Настройки</legend>   
+        <div class="label">Трудност</div>
+        <input name="dif" type="radio" checked="checked" id="easy" value="easy" dx="2" dy="-2">
+        <label class="inline" for="easy">1</label>
+        <input name="dif" type="radio" id="medium" value="medium" dx="5" dy="-5">
+        <label class="inline" for="medium">2</label>
+        <input name="dif" type="radio" id="hard" value="hard" dx="10" dy="-10">
+        <label class="inline" for="hard">3</label>
+        <div class="label">Брой редове</div>
+        <input id="rows" type="number" min="1" max="5" value="4"">
+        <div class="label">Брой колони</div>
+        <input id="columns" type="number" min="1" max="8" value="3"">
+        <div class="label">Екран</div>
+        <input name="screen" type="radio" id="normal" value="normal">
+        <label class="inline" for="normal">normal</label>
+        <input name="screen" type="radio" id="fullscreen" value="fullscreen">
+        <label class="inline" for="fullscreen">bigger scr</label>
+     </fieldset>
+     <div class="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="pause">Pause</button>
+       </div>
+    </div>
+    <div class="content">
+            <canvas id="myCanvas" width="480" height="320"></canvas>
+            
+    </div>
+</body>
+</html>
